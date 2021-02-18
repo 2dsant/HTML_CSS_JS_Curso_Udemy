@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuário a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+<!-- informa a linguagem -->
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+        <meta name="author" content="David">
+        <!-- informa ao navegador o autor -->
+        <meta name="description" content="Página básica para ver a estrutura básica de um documento HTML">
+        <!-- Cria uma descrição para a página -->
+        <meta name="keywords" content="HTML5, CSS">
+        <!-- Antes era utilizado, hoje ñ tanto. mas serve para criar palavras chaves para a página -->
+        <style>
+            body{
+                background: rgb(238,174,202);
+                background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            }
+            .formLogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+            .formLogin fieldset{
+                background: #fafafa;
+                box-shadow: 0 4px 12px 0 rgba(0,0,0,0.6);
+                transition: 0.3s;
+                
+            }
+            .formLogin label{
+                display: block;
+                margin-top: 15px;
+            }
+            #user, #pass, .btn{
+                margin-top: 2px;
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 15px;
+                border: none;
+            }
+            #user, #pass{
+                background-color: #ddd;
+            }
+            #user:focus, #pass:focus{
+                background-color: white;
+            }
+            .btn{
+                margin-top: 2px;
+            }
+            #user{
+                margin-bottom: 5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1>Exemplo de formulário</h1>
+        
+        <form action="#" method="POST" class="formLogin">
+            <fieldset>
+                <legend  class="login">Login</legend>
+                
+                <label for="user">Digite o seu usuário:</label>
+                <input type="text" id="user" name="user" placeholder="login" autofocus>
+                                
+                <label for="pass">Digite a sua senha:</label>
+                <input type="password" id="pass" name="pass" placeholder="senha">
+                
+                <input type="submit" value="Logar" class="btn">
+            </fieldset>
+        </form>
+    </body>
+</html>

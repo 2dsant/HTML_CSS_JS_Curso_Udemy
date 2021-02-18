@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        div{
+            border: 2px solid red;
+            padding: 25px;
+            position: relative;
+        }
+
+        div:before{
+            content: "before:";
+            background-color: #ccc;
+        }
+        div:after{
+            content: "";
+            background-color: red;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div> Texto principal da div </div>
+
+    <article>
+        <p>Antes do titulo</p>
+        <h3>Titulo</h3>
+
+        <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    </article>
+
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="http://serfrontend.com">link falso</a></li>
+    </ul>
+</body>
+</html>
